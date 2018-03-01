@@ -389,12 +389,29 @@ button:focus,
  *-------------------*/
 .expertise-item {
     margin-bottom : 20px;
-    }
+}
+
+.expertise-item p {
+    margin-bottom : 0px;
+    line-height: 1.5em;
+}
+
+.expertise-item p strong.uppercase {
+    text-transform: uppercase;
+}
 
 .expertise-item h3 {
     margin-bottom : 5px;
     font-weight   : 700;
-    }
+    font-family: "proxima-nova";
+    color: #888;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: .25em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
 
 /*-------------------
  * Skills Progressbar
@@ -473,7 +490,14 @@ button:focus,
 .portfolio-item .portfolio-info h3 {
     margin      : 0;
     line-height : 1;
-    color       : #ffffff;
+    font-family: "proxima-nova";
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: .25em;
+    line-height: 1em;
+    text-transform: uppercase;
     }
 
 .portfolio-item .portfolio-info small {
