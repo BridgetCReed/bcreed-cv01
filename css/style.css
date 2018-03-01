@@ -1,26 +1,10 @@
-/*
-Template Name: Resumex
-Description: HTML5 / CSS3 One Page
-Version: 1.0
-Author: themehippo.com
-*/
-
-/*------------------------------------------------------------------
-# [Color codes]
-
-# Body  (text): #3a4750
-# Heading Color #444444
-# Theme Color (link color) #82b541
-# Mid grey (sub header) #f4f4f4
-# -------------------------------------------------------------------*/
-
 body {
-    font-family : 'Hind', sans-serif;
+    font-family : 'Proxima-Nova', sans-serif;
     font-size   : 15px;
     line-height : 1.8em;
     color       : #3d3d50;
     font-weight : 300;
-    background  : url("../img/pattern-bg.png") fixed;
+    background  : #ffffff;
     }
 
 /* --------------------------------------
@@ -33,16 +17,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 h1 {
-    font-size   : 26px;
+    font-family: 'Playfair Display', serif;
+    font-size   : 22px;
     line-height : 1.8em;
     font-weight : 700;
     }
 
 h2 {
-    font-size   : 18px;
-    line-height : 1.8em;
-    font-weight : 700;
-    }
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: .125em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
 
 h3 {
     font-size   : 16px;
@@ -71,7 +61,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #FFC107;
+    color              : #c779d0;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -90,7 +80,7 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #ff9800;
+    color           : #c779d0;
     }
 
 p {
@@ -124,28 +114,31 @@ ul {
 
 /*btn-primary*/
 .btn-primary {
-    background-color : #FFC107;
+    background-color : #feac5e;
+    border: 2px solid #feac5e;
     }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active:focus {
-    background : #ff9800;
+    background : #fff;
+    color: #feac5e;
+    border: 2px solid #feac5e;
     }
 
 /*btn-default*/
 .btn-default {
-    color            : #2a54f5;
-    background-color : transparent;
-    border           : 2px solid #2a54f5;
+    color            : #4bc0c8;
+    background-color : #fff;
+    border: 2px solid #4bc0c8;
     }
 
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active:focus {
-    background   : #2a54f5;
+    background   : #4bc0c8;
     color        : #ffffff;
-    border-color : #2a54f5;
+    border: 2px solid #4bc0c8;
     }
 
 button:focus,
@@ -159,13 +152,14 @@ button:focus,
  * -------------------*/
 
 .columns-block {
-    display                : -webkit-flex;
-    display                : flex;
-    -webkit-flex-direction : row;
-    flex-direction         : row;
-    margin                 : 60px auto;
-    padding                : 0;
-    box-shadow             : 0 0 0 1px #eaeaea;
+    flex-wrap         : wrap;
+    display           : -webkit-box;
+    display           : -moz-box;
+    display           : -ms-flexbox;
+    display           : -webkit-flex;
+    display           : flex;
+    -webkit-flex-flow : row wrap;
+    justify-content   : space-around;
     }
 
 .blocks {
@@ -173,33 +167,24 @@ button:focus,
     }
 
 .left-col-block {
-    overflow     : hidden;
-    -webkit-flex : 1 0 0;
-    flex         : 1 0 0;
-    position     : relative;
-    background   : rgba(255, 255, 255, .8);
-    border-right : 1px solid #eaeaea;
+    width      : 50%;
+    text-align : center;
+    overflow   : hidden;
+    position   : fixed;
+    left       : 0;
     }
 
 .right-col-block {
-    -webkit-flex : 2 0 0;
-    flex         : 2 0 0;
-    position     : relative;
-    background   : #ffffff;
+    width      : 50%;
+    position   : absolute;
+    right      : 0;
+    box-shadow : -10px -10px 30px rgba(0, 0, 0, 0.23);
     }
 
-@media (max-width : 768px) {
-
-    .columns-block {
-        display    : block;
-        margin     : 0;
-        box-shadow : none;
-        }
-
+@media (max-width : 600px) {
     .left-col-block {
         width    : 100%;
         position : relative;
-        border   : 0;
         }
 
     .right-col-block {
@@ -209,34 +194,27 @@ button:focus,
         }
     }
 
-@media (min-width : 769px) and (max-width : 1024px) {
-    .columns-block {
-        margin-top    : 30px;
-        margin-bottom : 30px;
-        }
-    }
-
 /* --------------------
  * Section Background
  * -------------------*/
 
 .gray-bg {
-    background-color : #ffffff;
+    background-color : #f9f9f9;
     }
 
 /* --------------------
  *  main Wrapper
  * -------------------*/
 #main-wrapper {
-    overflow : hidden;
+    background : #ffffff;
+    overflow   : hidden;
     }
 
 /*-------------------
  * Section Wrapper
  *-------------------*/
 .section-wrapper {
-    padding       : 50px;
-    border-bottom : 1px solid #eaeaea;
+    padding : 50px;
     }
 
 @media (max-width : 480px) {
@@ -254,102 +232,156 @@ button:focus,
 
 .section-title h2 {
     margin-bottom : 5px;
-    color         : #bebece;
     }
 
 /*-----------------------------
  * NAVIGATION & HEADER STYLE
- *-----------------------------*/
+ *-------------------------------*/
 
 .header {
-    padding  : 20px !important;
-    margin   : 0;
-    position : relative;
+    padding        : 0;
+    margin         : 0;
+    height         : 100vh;
+    vertical-align : middle;
+    position       : relative;
     }
 
 .header .profile-img {
-    margin-bottom : 50px;
-    }
+    position            : absolute;
+    top                 : 0;
+    left                : 0;
+    z-index             : -1;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url(../img/img-profile.jpg);
+    background-size     : cover;
+    background-position : center top;
+    mix-blend-mode: multiply;
+}
 
-.header .content-wrapper {
+.header .profile-img:before {
+    content    : "";
+    position   : absolute;
+    left       : 0;
+    top        : 0;
+    right      : 0;
+    bottom     : 0;
+    background: linear-gradient(270deg, #feac5e, #c779d0, #4bc0c8, #feac5e, #c779d0, #4bc0c8);
+    background-size: 1200% 1200%;
+    mix-blend-mode: multiply;
+    -webkit-animation: movingGradient 59s ease infinite;
+    -moz-animation: movingGradient 59s ease infinite;
+    -o-animation: movingGradient 59s ease infinite;
+    animation: movingGradient 59s ease infinite;
+}
 
-    }
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .header .content {
-    width  : 100%;
-    margin : 0 auto;
+    position : absolute;
+    bottom   : 0;
+    left     : 0;
+    right    : 0;
+    width    : 100%;
+    margin   : 0 auto;
+    padding  : 10%;
     }
 
 .header .content h1 {
+    font-size   : 36px;
+    color       : #ffffff;
     line-height : 1;
-    margin      : 0 0 5px;
+    margin      : 0;
     }
 
-.header .content .lead {
-    font-size : 18px;
-    }
-
-.header .content .about-text {
-    margin : 10px 0;
-    }
+.header .content p {
+    font-family: "proxima-nova";
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: .25em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
 
 .header .btn {
     margin-top : 40px;
     }
 
-@media (max-width : 768px) {
-    .header {
-        padding       : 0;
-        text-align    : center;
-        border-bottom : 1px solid #ededed;
-        }
-
-    .header img {
-        margin : 0 auto;
-        }
-
-    .header .content {
-        padding : 50px;
-        }
-    }
-
-/* Header Sticky */
-
-.sticky {
-    position : -webkit-sticky;
-    position : sticky;
-    top      : 0;
-    }
-
-/*-------------------
- * Social Icon
- *-------------------*/
-
-.social-icon {
-    margin  : 20px 0;
+.header .content .social-icon {
+    margin  : 0;
     padding : 0;
     display : block;
     }
 
-.social-icon li {
+.header .content .social-icon li {
     display : inline-block;
     margin  : 0 2px;
     }
 
-.social-icon li a {
+.header .content .social-icon li a {
     display       : block;
     font-size     : 12px;
-    color         : #333333;
+    color         : #ffffff;
     width         : 34px;
     height        : 34px;
     line-height   : 33px;
     text-align    : center;
-    border-radius : 2px;
-    border        : 2px solid #eeeeee;
+    border-radius : 100%;
+    border        : 2px solid rgba(255, 255, 255, .2);
     }
 
-.social-icon li a:hover {
-    border-color : #cccccc;
+.header .content .social-icon li a:hover {
+    border-color : #ffffff;
+}
+
+.header .img-responsive {
+    width: 50%;
+    margin: 0 auto;
+}
+@media (max-width : 1500px) {
+    .header .img-responsive {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media (max-width : 1000px) {
+    .header .img-responsive {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media (max-width : 600px) {
+    .header .profile-img {
+        z-index : 1;
+    }
+
+    .header .img-responsive {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .header .content {
+        z-index : 2;
+        }
+    }
+
+/*-------------------
+ * Intro
+ *-------------------*/
+
+.intro {
     }
 
 /*-------------------
@@ -370,26 +402,26 @@ button:focus,
 
 .progress-item {
     position : relative;
-    }
+}
 
 .progress-item .progress-title {
     font-size     : 15px;
     font-weight   : 400;
     display       : inline-block;
     margin-bottom : 5px;
-    }
+}
 
 .progress-item .progress {
     height        : 4px;
     box-shadow    : none;
     border-radius : 5px;
-    }
+}
 
 .progress-item .progress-bar {
-    background-color : #FFC107;
+    background-color : #c779d0;
     box-shadow       : none;
     text-align       : right;
-    }
+}
 
 .progress-item .progress-percent {
     font-size        : 10px;
@@ -398,7 +430,7 @@ button:focus,
     top              : 5px;
     padding          : 0 8px;
     border-radius    : 3px;
-    }
+}
 
 .progress-item .progress-percent::before {
     content      : "";
@@ -407,7 +439,7 @@ button:focus,
     bottom       : -4px;
     border-top   : 6px solid #313131;
     border-right : 8px solid transparent;
-    }
+}
 
 /*-------------------
  * Portfolio
@@ -417,6 +449,7 @@ button:focus,
     position      : relative;
     display       : block;
     margin-bottom : 30px;
+    border: 4px solid #fff;
     }
 
 .portfolio-item .portfolio-thumb img {
@@ -433,7 +466,7 @@ button:focus,
     background : -webkit-linear-gradient(
             top,
             transparent 0%,
-            rgba(0, 0, 0, 0.5) 100%
+            rgba(0, 0, 0, 0.25) 100%
     );
     }
 
@@ -447,13 +480,9 @@ button:focus,
     color : #ffffff;
     }
 
-.portfolio-item:hover .portfolio-info {
-    background : -webkit-linear-gradient(
-            top,
-            transparent 0%,
-            #000 100%
-    );
-    }
+.portfolio-item:hover {
+    border: 4px solid #4bc0c8;
+}
 
 /*-------------------
  * Content Item
@@ -477,7 +506,12 @@ button:focus,
 
 .content-item small {
     color : #888888;
-    }
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .25em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
 
 /*-------------------
  * Contact
@@ -534,11 +568,11 @@ button:focus,
         }
     }
 
-/* ---------------------------------------------- /*
+/* ====================
  * Preloader
-/* ---------------------------------------------- */
+ * ====================*/
 #preloader {
-    background : rgba(255, 255, 255,.8);
+    background : #c779d0;
     bottom     : 0;
     left       : 0;
     position   : fixed;
@@ -549,7 +583,7 @@ button:focus,
 
 #status,
 .status-mes {
-    background-image    : url(../img/preloader.svg);
+    background-image    : url(../img/puff.svg);
     background-position : center;
     background-repeat   : no-repeat;
     height              : 200px;
