@@ -522,7 +522,7 @@ button:focus,
  * Section Icons
  *-------------------*/
 
- .section-talks-features i {
+ .section-talks-features i.fa {
      color: #c779d0;
  }
 
