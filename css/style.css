@@ -115,7 +115,7 @@ a:focus {
 }
 
 a h3 {
-    color              : #4bc0c8;
+    color              : #c779d0;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -126,7 +126,7 @@ a h3 {
 a:hover h3,
 a:focus h3 {
     text-decoration : none;
-    color: #c779d0;
+    color: #4bc0c8;
 }
 
 
@@ -434,6 +434,7 @@ button:focus,
     color: #fff;
     background: #3d3d50;
 }
+
 .intro a {
     color: #c779d0;
     padding: 0 2px 0 5px;
@@ -648,6 +649,20 @@ button:focus,
     font-size : 13px;
     color     : #fff;
 
+}
+
+.footer a {
+    color: #c779d0;
+    padding: 0 2px 0 5px;
+    font-style: normal;
+    letter-spacing: .25em;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transiti: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .footer .copyright-section .copytext {
