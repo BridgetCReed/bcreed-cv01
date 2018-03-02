@@ -72,7 +72,8 @@ h6 {
     line-height : 1.5em;
 }
 
-span.spacey {    font-family: 'Playfair Display', serif;
+span.spacey {
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
@@ -82,12 +83,15 @@ span.spacey {    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
 }
 
+strong {
+    letter-spacing: .125em;
+}
+
 /* --------------------------------------
  * LINK STYLE
  *------------------------------------------*/
 a {
     color              : #c779d0;
-    font-weight: bold;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -156,14 +160,6 @@ ul {
 .btn-default {
     color            : #4bc0c8;
     background-color : #fff;
-    border: 2px solid #4bc0c8;
-}
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active:focus {
-    background   : #4bc0c8;
-    color        : #ffffff;
     border: 2px solid #4bc0c8;
 }
 
@@ -469,6 +465,7 @@ button:focus,
 
 .expertise-item p strong.uppercase {
     text-transform: uppercase;
+    letter-spacing: .125em;
 }
 
 .expertise-item h3 {
@@ -584,19 +581,30 @@ button:focus,
  *-------------------*/
 
 .content-item {
-    margin-bottom : 40px;
+    margin-bottom : 0px;
 }
 
 .content-item h3 {
-    margin         : 0 0 10px;
+    margin         : 0;
     line-height    : 1;
     font-weight    : bold;
+    letter-spacing: .125em;
     text-transform : uppercase;
 }
 
 .content-item h4 {
-    margin      : 0;
-    line-height : 1;
+    margin: 2.5px 0 7.5px;
+    line-height: 1;
+    text-transform:uppercase;
+}
+
+.content-item p {
+    line-height: 1em;
+    font-size: .85em;
+}
+
+.content-item p.last {
+    margin-bottom: 50px;
 }
 
 .content-item small {
