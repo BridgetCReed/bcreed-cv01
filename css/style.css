@@ -114,6 +114,22 @@ a:focus {
     color: #c779d0;
 }
 
+a h3 {
+    color              : #4bc0c8;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+}
+
+a:hover h3,
+a:focus h3 {
+    text-decoration : none;
+    color: #c779d0;
+}
+
+
 p {
     margin-bottom : 20px;
 }
