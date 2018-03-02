@@ -93,6 +93,10 @@ strong {
     letter-spacing: .125em;
 }
 
+div.margin-bottom-20 {
+    margin-bottom:20px;
+}
+
 hr.desktop {
     display:block;
     clear: both;
@@ -101,7 +105,6 @@ hr.desktop {
 hr.mobile {
     display:none;
 }
-
 
 @media (max-width: 600px) {
     hr.desktop {
@@ -629,10 +632,6 @@ button:focus,
 
 .footer p {
     margin-bottom: 0;
-}
-
-.footer p.powered-by {
-    margin-bottom: 20px;
 }
 
 .footer .copyright-section {
