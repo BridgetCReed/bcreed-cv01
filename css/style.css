@@ -597,7 +597,7 @@ button:focus,
 
 .content-item h4 {
     margin: 2.5px 0 7.5px;
-    line-height: 1;
+    line-height: 1.25em;
     text-transform:uppercase;
 }
 
