@@ -613,6 +613,7 @@ a.portfolio-item:hover {
   color: #c779d0;
   letter-spacing: .125em;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .content-item.portfolio-item p a:hover {
