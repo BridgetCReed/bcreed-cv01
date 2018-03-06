@@ -5,7 +5,7 @@
  * Global Sizes
  *------------------------------------------- */
 /* ------------------------------------------
- * Global Typography
+ * Global Styles
  *------------------------------------------- */
 body {
   font-family: 'Proxima-Nova', sans-serif;
@@ -85,6 +85,10 @@ strong.uppercase {
 
 div.margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+i.fa {
+  color: #c779d0;
 }
 
 hr.desktop {
@@ -499,29 +503,22 @@ button:focus {
 }
 
 /*-------------------
- * Section Icons
- *------------------- */
-.section-talks-features i.fa {
-  color: #c779d0;
-}
-
-/*-------------------
  * Portfolio
  *------------------- */
-.portfolio-item {
+a.portfolio-item {
   position: relative;
   display: block;
   margin-bottom: 30px;
   border: 4px solid #fff;
 }
 
-.portfolio-item .portfolio-thumb img {
+a.portfolio-item .portfolio-thumb img {
   height: auto;
   display: block;
   max-width: 100%;
 }
 
-.portfolio-item .portfolio-info {
+a.portfolio-item .portfolio-info {
   position: absolute;
   bottom: 0;
   padding: 30px 15px 5px;
@@ -529,7 +526,7 @@ button:focus {
   background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
 }
 
-.portfolio-item .portfolio-info h3 {
+a.portfolio-item .portfolio-info h3 {
   margin: 0;
   line-height: 1;
   font-family: "proxima-nova";
@@ -542,11 +539,11 @@ button:focus {
   text-transform: uppercase;
 }
 
-.portfolio-item .portfolio-info small {
+a.portfolio-item .portfolio-info small {
   color: #fff;
 }
 
-.portfolio-item:hover {
+a.portfolio-item:hover {
   opacity: .5;
 }
 
@@ -581,6 +578,48 @@ button:focus {
 }
 
 .content-item small {
+  color: #888;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: .25em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.content-item.portfolio-item h3 {
+  margin: 0;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+}
+
+.content-item.portfolio-item h4 {
+  margin: 2.5px 0 7.5px;
+  line-height: 1.25em;
+  text-transform: none;
+}
+
+.content-item.portfolio-item p {
+  line-height: 1em;
+  font-size: .85em;
+}
+
+.content-item.portfolio-item p.last {
+  margin-bottom: 50px;
+}
+
+.content-item.portfolio-item p a {
+  color: #c779d0;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+}
+
+.content-item.portfolio-item p a:hover {
+  color: #4bc0c8;
+}
+
+.content-item.portfolio-item small {
   color: #888;
   font-weight: normal;
   font-style: normal;
