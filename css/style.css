@@ -1,15 +1,15 @@
 /* ------------------------------------------
  * Global Colors
- *------------------------------------------ */
+ *------------------------------------------- */
 /* ------------------------------------------
  * Global Typography
- *------------------------------------------ */
+ *------------------------------------------- */
 body {
   font-family: 'Proxima-Nova', sans-serif;
   font-size: 15px;
   line-height: 1.8em;
   color: #3d3d50;
-  font-weight: 300;
+  font-weight: normal;
   background: #fff;
 }
 
@@ -22,7 +22,7 @@ h1 {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   line-height: 1.8em;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 h2 {
@@ -39,19 +39,19 @@ h2 {
 h3 {
   font-size: 16px;
   line-height: 1.8em;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 15px;
   line-height: 1.8em;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 h5 {
   font-size: 15px;
   line-height: 1.5em;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 h6 {
@@ -156,14 +156,14 @@ ul {
   padding: 14px 30px 11px;
   margin-bottom: 0;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: normal;
   border-radius: 0;
   border: 0;
   text-transform: uppercase;
 }
 
 .btn-lg {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   padding: 15px 30px;
 }
@@ -339,7 +339,7 @@ button:focus {
 .header .content p {
   font-family: "proxima-nova";
   color: #fff;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-size: 16px;
   letter-spacing: .25em;
@@ -465,7 +465,7 @@ button:focus {
   color: #fff;
   background-color: #c779d0;
   padding: 0 2px 0 5px;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   letter-spacing: .25em;
   line-height: 1em;
@@ -485,7 +485,6 @@ button:focus {
 
 .expertise-item h3 {
   margin-bottom: 5px;
-  font-weight: 700;
   font-family: "proxima-nova";
   color: #888;
   font-weight: bold;
@@ -532,7 +531,7 @@ button:focus {
   line-height: 1;
   font-family: "proxima-nova";
   color: #fff;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-size: 16px;
   letter-spacing: .25em;
@@ -580,7 +579,7 @@ button:focus {
 
 .content-item small {
   color: #888;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   letter-spacing: .25em;
   line-height: 1em;
@@ -632,7 +631,7 @@ button:focus {
   color: #fff;
   background-color: #c779d0;
   padding: 0 2px 0 5px;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   letter-spacing: .25em;
   line-height: 1em;
@@ -640,7 +639,7 @@ button:focus {
 }
 
 .footer .copyright-section .copytext {
-  font-weight: 400;
+  font-weight: normal;
   display: block;
 }
 
@@ -784,7 +783,7 @@ button:focus {
   color: #fff;
   background-color: #c779d0;
   padding: 0px 2px 0px 5px;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   letter-spacing: .25em;
   text-transform: uppercase;
