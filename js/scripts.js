@@ -10,14 +10,15 @@ jQuery(function ($) {
 
 jQuery(document).ready(function($){
 	var contentSections = $('.bcr-section'),
-		navigationItems = $('#bcr-vertical-nav a');
+		navigationItems = $('#bcr-vertical-nav a'),
+		smoothItems = $('a.smooth');
 
+	//smooth scroll nav
 	updateNavigation();
 	$(window).on('scroll', function(){
 		updateNavigation();
 	});
 
-	//smooth scroll to the section
 	navigationItems.on('click', function(event){
         event.preventDefault();
         smoothScroll($(this.hash));
@@ -33,6 +34,21 @@ jQuery(document).ready(function($){
 				navigationItems.eq(activeSection).removeClass('is-selected');
 			}
 		});
+	}
+
+	//smooth scroll links
+	updateSmooth();
+	$(window).on('scroll', function(){
+		updateSmooth();
+	});
+
+	smoothItems.on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+	});
+	
+	function updateSmooth() {
+		$this = $(this);
 	}
 
 	function smoothScroll(target) {
