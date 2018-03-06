@@ -62,7 +62,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="page-top">
+<body id="page-top" class="parallax-scrolling">
 <div id="main-wrapper">
 <!-- Page Preloader -->
 <div id="preloader">
@@ -70,57 +70,55 @@
         <div class="status-mes"></div>
     </div>
 </div>
+<div class="columns-block">
 
 <!-- sidenav -->
-<nav id="bcr-vertical-nav" >
-	<ul>
-		<li>
-			<a href="#intro" data-number="1" alt="Bc.Reed">
-				<span class="bcr-dot"></span>
-				<span class="bcr-label">Bc.Reed</span>
-			</a>
-        </li>
-        <li>
-            <a href="#expertise" data-number="2" alt="Expertise">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">Expertise</span>
-            </a>
-        </li>
-        <li>
-            <a href="#experience" data-number="3" alt="Experience">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">Experience</span>
-            </a>
-        </li>
-        <li>
-            <a href="#coursework" data-number="4" alt="Education &amp; Coursework">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">Education &amp; Coursework</span>
-            </a>
-        </li>
-        <li>
-            <a href="#extracurriculars" data-number="5" alt="Teaching &amp; Hackathons">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">Teaching &amp; Hackathons</span>
-            </a>
-        </li>
-        <li>
-            <a href="#features" data-number="6" alt="Speaking &amp; Features">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">Speaking &amp; Features</span>
-            </a>
-        </li>
-        <li>
-            <a href="#slides" data-number="7" alt="GDI Slides">
-                <span class="bcr-dot"></span>
-                <span class="bcr-label">GDI Slides</span>
-            </a>
-        </li>
-	</ul>
+<nav id="parallax-nav">
+    
+    <a href="#intro" id="parallax-nav-item" class="smooth">
+        <div class="dot">
+            <span class="nav-title">Bc.Reed</span>
+        </div>
+    </a>
+  
+    <a href="#expertise" id="parallax-nav-item" class="smooth">
+        <div class="dot">
+            <span class="nav-title">Expertise</span>
+        </div>
+    </a>
+  
+    <a href="#experience" id="parallax-nav-item" class="smooth">
+        <div class="dot">
+            <span class="nav-title">Experience</span>
+        </div>
+    </a>
+
+    <a href="#coursework" id="parallax-nav-item" class="smooth">
+            <div class="dot">
+                <span class="nav-title">Education &amp; Coursework</span>
+            </div>
+        </a>
+      
+        <a href="#teaching-hackathons" id="parallax-nav-item" class="smooth">
+            <div class="dot">
+                <span class="nav-title">Teaching &amp; Hackathons</span>
+            </div>
+        </a>
+      
+        <a href="#speaking-features" id="parallax-nav-item" class="smooth">
+            <div class="dot">
+                <span class="nav-title">Speaking &amp; Features</span>
+            </div>
+        </a>
+      
+        <a href="#slides" id="parallax-nav-item" class="smooth">
+            <div class="dot">
+                <span class="nav-title">GDI Slides</span>
+            </div>
+        </a>
+  
 </nav>
 
-
-<div class="columns-block">
 <div class="left-col-block blocks">
     <header class="header">
         <div class="content text-center">
@@ -436,7 +434,7 @@
 </section>
 <!-- .section-education -->
 
-<section class="section-wrapper section-teaching-hackathons" id="extracurriculars">
+<section class="section-wrapper section-teaching-hackathons" id="teaching-hackathons">
     <div class="container-fluid">
         <div class="col-md-6">
             <div class="row">
@@ -453,8 +451,8 @@
                         <h3>Girl Develop It Philly</h3>
 
                         <h4><strong>TA:</strong> HTML/CSS 101, HTML/CSS 201, Javascript</h4>
-                        <h4><strong>Teaching (<a href="#slides" class="smooth">slides</a>):</strong> Photoshop 101, UI Tools (Photoshop,&nbsp;Illustrator, &amp; Sketch)</h4>
-                        <p>Philadelphia, PA</p>
+                        <h4><strong>Teaching:</strong> Photoshop 101, UI Tools (Photoshop,&nbsp;Illustrator, &amp; Sketch)</h4>
+                        <p>Philadelphia, PA - <strong><a href="#slides" class="smooth">slides</a></strong></p>
                     </div>
                     <!-- .teaching-item -->
                     <div class="content-item">
@@ -507,7 +505,7 @@
 </section>
 <!-- .section-teaching-hackathons -->
 
-<section class="section-wrapper section-talks-features gray-bg" id="features">
+<section class="section-wrapper section-talks-features gray-bg" id="speaking-features">
     <div class="container-fluid">
         <div class="col-md-6">
             <div class="row">
