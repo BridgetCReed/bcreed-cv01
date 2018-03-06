@@ -568,6 +568,10 @@ a.portfolio-item:hover {
   text-transform: none;
 }
 
+.content-item h4 strong {
+  text-transform: uppercase;
+}
+
 .content-item p {
   line-height: 1em;
   font-size: .85em;
