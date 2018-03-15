@@ -150,7 +150,7 @@ a:hover h3, a:focus h3 {
   color: #4bc0c8;
 }
 
-p {
+p, h1 {
   margin-bottom: 20px;
 }
 
@@ -349,6 +349,7 @@ button:focus {
   color: #fff;
   line-height: 1;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .header .content p {
