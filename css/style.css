@@ -849,4 +849,8 @@ a.portfolio-item:hover {
     display: none;
   }
 }
+
+span.italic {
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */
